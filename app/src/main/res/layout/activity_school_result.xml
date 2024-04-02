@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F4F5"
+    android:paddingHorizontal="20dp"
+    tools:context=".SchoolResult">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+        <LinearLayout
+            android:id="@+id/schoolBackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/backshape">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_arrow_back_24"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="School Result"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textColor="#212121"
+            android:paddingRight="15dp"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="25dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Total Marks"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/enterbox">
+            <EditText
+                android:id="@+id/totalMarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Total Marks"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="25dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Your Total Marks"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/enterbox">
+            <EditText
+                android:id="@+id/yourTotalMarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Your Marks"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/schoolCalcBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:background="@drawable/resultbuttn"
+        android:elevation="25dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Calculate"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Percentage"
+            android:textStyle="bold"
+            android:textSize="19sp"/>
+        <TextView
+            android:id="@+id/marksPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0.00"
+            android:textSize="18dp"
+            android:backgroundTint="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>
